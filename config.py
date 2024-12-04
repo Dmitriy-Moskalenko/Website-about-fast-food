@@ -19,8 +19,6 @@ class CategoryConfig(BaseModel):
 
 # Валидация для Product
 class ProductConfig(BaseModel):
-    id: int
-    title: str
-    description: str
-    category_id: int
-    category: CategoryConfig
+    title: Optional[str] = None
+    description: Optional[str] = None
+    category_id: Optional[int] = None

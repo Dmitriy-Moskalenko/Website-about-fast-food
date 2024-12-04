@@ -30,6 +30,4 @@ class Product(base):
     title = Column(String, index=True)
     description = Column(String)
     category_id = Column(Integer, ForeignKey('category.id'))
-    category = relationship('Category')
-
 
